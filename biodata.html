@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://ptfi.co.id/favicon.png">
+    <style>
+        .bg pattern{
+            background-color: #f7f7f7;
+            background-image: radial-gradient(#d3d3d3 1px, trasparent 1 px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-pattern min-h-screen p-8 font-sans">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
+        
+        <header class="bg-blue-600 text-white p-6 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight">Personal Profile</h1>
+            <p class="mt-1 text-blue-200">A brief introduction to who I am.</p>
+        </header>
+
+        <main class="grid md:grid-cols-3 gap-8 p-10">
+            <div class="md:col-span-1 flex flex-col items-center">
+                <div class="w-48 rounded-xl overflow-hidden border-4 border-blue-500 shadow-lg mb-6">
+                    <img src="image/MyPhoto.jpeg" alt="MyPhoto" class="w-full h-full object-cover">
+                </div>
+
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800">Jessica Shabrina</h2>
+                    <p class="text-lg text-blue-600 mt-1">Future Frontend Developer</p>
+                </div>
+
+                <div class="mt-6 w-full p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700 border-b pb-1">Details</h3>
+                    <ul class="space-y-1 text-gray-600">
+                        <li><strong>NIM: </strong>2481026</li>
+                        <li><strong>Faculty: </strong>Information Technology</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 space-y-8">
+                <section class="p-6 bg-yellow-50 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-yellow-700 mb-4 flex items-center">
+                        <span class="mr-2 text-3xl">Hobbies</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-yellow-800 rounded-full text-sm font-medium">Singing</span>
+                        <span class="px-3 py-1 bg-yellow-800 rounded-full text-sm font-medium">Playing Guitar</span>
+                        <span class="px-3 py-1 bg-yellow-800 rounded-full text-sm font-medium">Cooking</span>
+                        <span class="px-3 py-1 bg-yellow-800 rounded-full text-sm font-medium">Sleep</span>
+                    </div>
+                </section>
+
+                <section class="p-6 bg-green-50 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4 flex items-center">
+                        <span class="mr-2 text-3xl">Skills</span> 
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4 text-gray-700">
+                        <ul class="space-y-1 list-disc list-inside">
+                            <li>HTML & CSS</li>
+                            <li>Tailwind CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <ul class="space-y-1 list-disc list-inside">
+                            <li>Communication</li>
+                            <li>Team Collaboration</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="p-6 bg-blue-50 rounded-lg shadow-xl border-l-4 border-blue-600">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4 flex items-center">
+                        <span class="mr-2 text-3xl">Course Reflection</span> 
+                    </h3>
+                    <blockquote class="italic text-gray-700">
+                        "Throughout my time in the Web Development 1 course, I found every session to be not only informative but also extremely engaging and easy to follow.
+                        I genuinely enjoyed all the learning materials.
+                        I have immense respect for my esteemed Lecturer, Sir Andrew Pakpahan, as he managed to teach the subject matter so well and make it easily understandable 
+                        for all students, even for those who were completely new to web development.
+                        His systematic and practical teaching approach made complex material feel approachable.
+                    </blockquote>
+                    <p class="mt-3 text-sm text-right text-gray-500">Jessica</p>
+                </section>
+
+            </div>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-4 text-center text-sm">
+            <p>JessicaShabrina | <a href="index.html" class="hover:underline text-blue-400">Back to Home</a></p>
+        </footer>
+    </div>
+</body>
+</html>

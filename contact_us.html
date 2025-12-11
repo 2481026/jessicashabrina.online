@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://ptfi.co.id/favicon.png">
+    <style>
+
+        .error-message {
+            @apply text-red-600 text-sm mt-1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+
+    <div class="w-full max-w-2xl bg-white shadow-xl rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-gray-800 text-center border-b pb-3">Student Registration Form</h1>
+
+        <div id="success-message" class="hidden bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4" role="alert">
+            <p class="font-bold">Success!</p>
+            <p>Your registration has been submitted successfully. The form has been cleared.</p>
+        </div>
+
+        <form id="registration-form" class="space-y-6">
+
+            <div>
+                <label for="full_name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                <input type="text" id="full_name" name="full_name"
+                       class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                       placeholder="Enter your full name">
+                <p id="full_name-error" class="error-message hidden">Full Name is required.</p>
+            </div>
+
+            <div>
+                <label for="student_id" class="block text-sm font-medium text-gray-700">Student ID (NIM)</label>
+                <input type="text" id="student_id" name="student_id"
+                       class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                       placeholder="Enter your Student ID">
+                <p id="student_id-error" class="error-message hidden">Student ID is required.</p>
+            </div>
+
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input type="email" id="email" name="email"
+                       class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 
+                       focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                       placeholder="you@example.com">
+                <p id="email-error" class="error-message hidden">A valid Email Address is required.</p>
+            </div>
+
+            <div>
+                <label for="faculty_major" class="block text-sm font-medium text-gray-700">Faculty/Major</label>
+                <select id="faculty_major" name="faculty_major"
+                        class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none 
+                        focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+                    <option value="">Select Faculty/Major</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Information Technology">Information Technology</option>
+                </select>
+                <p id="faculty_major-error" class="error-message hidden">Faculty/Major selection is required.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+                    <input type="date" id="dob" name="dob"
+                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    <p id="dob-error" class="error-message hidden">Date of Birth is required.</p>
+                </div>
+
+                <div>
+                    <span class="block text-sm font-medium text-gray-700">Gender</span>
+                    <div class="mt-2 space-y-2">
+                        <div class="flex items-center">
+                            <input id="gender_male" name="gender" type="radio" value="Male"
+                                   class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300">
+                            <label for="gender_male" class="ml-3 block text-sm font-medium text-gray-700">Male</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="gender_female" name="gender" type="radio" value="Female"
+                                   class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300">
+                            <label for="gender_female" class="ml-3 block text-sm font-medium text-gray-700">Female</label>
+                        </div>
+                    </div>
+                    <p id="gender-error" class="error-message hidden">Gender selection is required.</p>
+                </div>
+            </div>
+
+            <div>
+                <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+                <textarea id="address" name="address" rows="3"
+                          class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 
+                          focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          placeholder="Your current address"></textarea>
+                <p id="address-error" class="error-message hidden">Address is required.</p>
+            </div>
+
+            <div>
+                <label for="phone_number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                <input type="text" id="phone_number" name="phone_number"
+                       class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 
+                       focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                       placeholder="e.g. 081234567890">
+                <p id="phone_number-error" class="error-message hidden">Phone Number must be numeric and at least 10 digits long.</p>
+            </div>
+
+            <div>
+                <button type="submit"
+                        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium 
+                        text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 
+                        focus:ring-blue-500 transition duration-150 ease-in-out">
+                    Register
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('registration-form');
+            const successMessage = document.getElementById('success-message');
+            const fields = [
+                { id: 'full_name', type: 'text' },
+                { id: 'student_id', type: 'text' },
+                { id: 'email', type: 'email' },
+                { id: 'faculty_major', type: 'select' },
+                { id: 'dob', type: 'date' },
+                { id: 'address', type: 'textarea' },
+                { id: 'phone_number', type: 'text' }
+            ];
+
+            fields.forEach(field => {
+                const element = document.getElementById(field.id);
+            });
+
+            function showError(fieldId, message) {
+                const errorElement = document.getElementById(`${fieldId}-error`);
+                const inputElement = document.getElementById(fieldId);
+
+                if (errorElement) {
+                    errorElement.textContent = message;
+                    errorElement.classList.remove('hidden');
+                }
+                if (inputElement) {
+                    inputElement.classList.add('border-red-500');
+                    inputElement.classList.remove('border-gray-300', 'focus:border-blue-500');
+                }
+            }
+
+            function clearError(fieldId) {
+                const errorElement = document.getElementById(`${fieldId}-error`);
+                const inputElement = document.getElementById(fieldId);
+                if (errorElement) {
+                    errorElement.classList.add('hidden');
+                }
+                if (inputElement) {
+                    inputElement.classList.remove('border-red-500');
+                    inputElement.classList.add('border-gray-300', 'focus:border-blue-500');
+                }
+            }
+
+            function isValidEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+
+            function validateForm() {
+                let isValid = true;
+                const errors = [];
+                successMessage.classList.add('hidden'); 
+
+                fields.forEach(field => {
+                    const element = document.getElementById(field.id);
+                    const value = element.value.trim();
+
+                    clearError(field.id);
+
+                    if (value === '') {
+                        isValid = false;
+                        showError(field.id, `${element.previousElementSibling.textContent} is required.`);
+                        errors.push(element.previousElementSibling.textContent);
+                    }
+                });
+
+                const genderMale = document.getElementById('gender_male');
+                const genderFemale = document.getElementById('gender_female');
+                const genderSelected = genderMale.checked || genderFemale.checked;
+
+                clearError('gender');
+                if (!genderSelected) {
+                    isValid = false;
+                    showError('gender', 'Gender selection is required.');
+                    errors.push('Gender');
+                }
+
+                const emailInput = document.getElementById('email');
+                if (emailInput.value !== '' && !isValidEmail(emailInput.value)) {
+                    isValid = false;
+                    showError('email', 'Please enter a valid email address (e.g., user@domain.com).');
+                    if (!errors.includes('Email Address')) { errors.push('Email Address'); }
+                }
+
+                const phoneInput = document.getElementById('phone_number');
+                const phoneValue = phoneInput.value.trim();
+                const minPhoneLength = 10;
+                const phoneRegex = /^[0-9]+$/;
+
+                if (phoneValue !== '') {
+                    if (!phoneRegex.test(phoneValue)) {
+                        isValid = false;
+                        showError('phone_number', 'Phone Number can only contain numeric values.');
+                        if (!errors.includes('Phone Number')) { errors.push('Phone Number'); }
+                    } else if (phoneValue.length < minPhoneLength) {
+                        isValid = false;
+                        showError('phone_number', `Phone Number must be at least ${minPhoneLength} digits long.`);
+                        if (!errors.includes('Phone Number')) { errors.push('Phone Number'); }
+                    }
+                }
+
+                if (!isValid) {
+                    const alertMessage = "Please correct the following errors:\n" + errors.join('\n');
+                    alert(alertMessage);
+                }
+
+                return isValid;
+            }
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                if (validateForm()) {
+
+                    console.log('Form submission successful!');
+                    
+                    successMessage.classList.remove('hidden');
+
+                    form.reset(); 
+
+                    setTimeout(() => {
+                        successMessage.classList.add('hidden');
+                    }, 5000);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

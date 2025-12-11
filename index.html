@@ -3,9 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi I am Jessica</title>
+    <title>PT Freeport Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://ptfi.co.id/favicon.png">
+    <style>
+        html,body{
+            scroll-behavior: smooth;
+            height:100%;
+            margin:0;
+        }
+        section{
+            height: 100vh;
+            scroll-snap-align:start;
+        }
+        main{
+            scroll-snap-type:y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+    </style>
 </head>
+
+    <header class="fixed top-0 w-full z-50">
+        <div class="max-w-8xl mx-auto px-7 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="image/imgi-logo-white-text-2021.png" class="h-8" alt="Logo">
+            </div>
+            <nav class="flex gap-10 text-white font-semibold hover:underline">
+                <a href="https://ptfi.co.id/id/about">BERANDA</a>
+                <a href="biodata.html">BIODATA</a>
+                <a href="contact_us.html">CONTACT US</a>
+                <a href="posts.html">POSTS</a>
+                <a href="freepage.html">MINI PORTOFOLIO</a>
+                <a href="https://ptfi.co.id/id/csr">KEBERLANJUTAN</a>
+                <a href="https://ptfi.co.id/id/media">MEDIA</a>
+                <a href="https://ptfi.co.id/id/karir">KARIR</a>
+                <a href="https://fti.unai.edu/">FTI UNAI</a>
+                <a href="https://unai.edu/">UNAI</a>
+            </nav>
+        </div>
+    </header>
+
 <body>
-    <h1>Saya sudah sukses</h1>
+   <main>
+    <section id="slide1" class="relative w-full h-screen">
+        <img src="image/Home.jpg" alt="Hero BG" class="absolute inset-0 w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
+            <div class="max-2-xl text-white">
+                <p class="text-sm flex items-center font-semibold mb-3">
+                    <span class="w-5 h-5 md:text-center bg-blue-400 inline-block mr-2">01</span>
+                </p>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                    Komitmen Menjaga Lingkungan<br>
+                    secara Berkelanjutan
+                </h1>
+                <a href="https://ptfi.co.id/id/news/detail/realisasi-komitmen-ptfi-untuk-menjaga-lingkungan-secara-berkelanjutan" 
+                class="inline-block mt-6 text-blue-300 font-semibold hover:underline">
+                    Selengkapnya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="slide2" class="relative w-full h-screen">
+        <img src="image/imgi_tujuan-bg.jpg" class="absolute inset-0 w-full h-full object-cover opacity-40"/>
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-20">
+            <div class="flex items-start space-x-6">
+
+                <div class="flex flex-col items-center mt-2 space-y-4 text-white">
+                    <span class="w-2 h-2 bg-gray-400 block rounded-full"></span>
+                    <span class="font-semibold text-lg">02</span>
+                    <span class="w-2 h-2 bg-gray-600 block rounded-full"></span>
+                </div>
+
+                <div class="flex-1 text-white">
+                    <h2 class="text-3xl font-bold mb-4">Tujuan Kami</h2>
+                    <p class="text-gray-300 leading-relaxed max-w-2xl">
+                        Kami terus berkarya untuk memberikan manfaat bagi bangsa,masyarakat,serta
+                        lingkungan di mana kami beroperasi. Mewujudkan asa melalui pengabdian terbaik
+                        bagi Indonesia.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+
+                        <div class="rounded-lg overflow-hidden bg-black bg-opacity-40">
+                            <img src="image/Lingkungan.jpg" class="w-full h-40 object-cover"/>
+                            <div class="p-5 text-white">
+                                <h3 class="text-xl font-bold mb-2">Lingkungan</h3>
+                                <p class="text-gray-300 text-sm mb-3">
+                                    Aksi Penghijauan di Grasberg Awali Rangkaian Peringatan Hari Lingkungan
+                                    Hidup 2024 di Kabupaten MImika
+                                </p>
+                                <a href="#" class="text-blue-300 hover:underline">Selengkapnya</a>
+                            </div>
+                        </div>
+
+                        <div class="rounded-lg overflow-hidden bg-black bg-opacity-40">
+                            <img src="image/imgi_freeport.png" alt="Operasional" class="w-full h-40 object-cover"/>
+                            <div class="p-5 text-white">
+                                <h3 class="text-xl font-bold mb-2">Operasional</h3>
+                                <p class="text-gray-300 text-sm mb-3">
+                                    Tim Penyelamat PT Freeport Indonesia Temukan Seluruh Rekan
+                                    Insiden Luncuran Material Basah
+                                </p>
+                                <a href="#" class="text-blue-300 hover:underline">Selengkapnya</a>
+                            </div>
+                        </div>
+                        
+                        <div class="rounded-lg overflow-hidden bg-black bg-opacity-40">
+                            <img src="image/Ibu.png" alt="Sosial" class="w-full h-40 object-cover"/>
+                            <div class="p-5 text-white">
+                                <h3 class="text-gray-300 font-bold mb-2">Sosial</h3>
+                                    <p class="text-gray-300 text-sm mb-3">
+                                        Ibu-ibu di Sekitar Smelter Freeport Belajar Olah pangan Lokal Jadi MPASI
+                                        Bergizi
+                                        </p>
+                                        <a href="#" class="text-blue-300 hover:underline">Selengkapnya</a>                      
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="slide3" class="relative w-full h-screen bg-white overflow-hidden">
+            <img src="image/imgi_frozen-bg.jpg" alt="Media Freeport BG" class="absolute inset-0 w-full h-full object-cover opacity-30"/>
+            <div class="absolute inset-0 bg-white bg-opacity-30"></div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6 py-20">
+                <div class="flex items-start space-x-6">
+
+                    <div class="flex flex-col items-center mt-2 space-y-4 text-gray-500">
+                        <span class="w-2 h-2 block rounded-full"></span>
+                        <span class="font-semibold text-lg text-blue-400">03</span>
+                        <span class="w-2 h-2 block-rounded-full"></span>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-xl font-bold">Media Freeport</h2>
+                            <a href="#" class="text-blue-500 font-semibold hover:underline">Selengkapnya</a>
+                        </div>
+
+                        <div class="mb-8">
+                            <div class="flex space-x-4 mb-2">
+                                <div class="bg-blue-400 text-white text-xs font-semibold px-2 py-1 rounded">08 DEC</div>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-700">Berita Lainnya</p>
+                                    <p class="text-sm font-bold">Freeport Serahkan Gedung Sains & Kemitraan UNCEN, Perkuat Riset & Pembelajaran di Papua</p>
+                                    <p class="text-xs text-gray-500">Presiden Direktur PT Freeport Indonesia Tony Wenas secara resmi menyerahterimakan fasilitas Gedung P...</p>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-4">
+                                <div class="bg-blue-400 text-white text-xs font-semibold px-2 py-1 rounded">08 DEC</div>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-700">Siaran Pers</p>
+                                    <p class="text-sm font-bold">Freeport Serahkan Gedung Sains & Kemitraan UNCEN, Perkuat Riset & Pembelajaran di Papua</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="relative group cursor-pointer rounded overflow-hidden">
+                                <img src="image/imgi_kendali-jarak-jauh.jpg" alt="Kendali Jarak Jauh" class="w-full h-40 object-cover"/>
+                                <div class="absolute bottom-3 left-3 bg-blue-400 text-white text-xs px-2 py-1 rounded">00:56</div>
+                                <div class="absolute inset-0 flex items-center justify-center opacity-70 group-hover:opacity-100 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-6.518 3.75V7.418l6.518 3.75z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="relative group cursor-pointer rounded overflow-hidden">
+                                <img src="image/imgi_mengawali perjalanan.jpg" alt="Mengawali Perjalanan" class="w-full h-40 object-cover"/>
+                                <div class="absolute bottom-2 left-2 bg-blue-400 text-white text-xs px-2 py-1 rounded">01:10</div>
+                                <div class="absolute inset-0 flex items-center justify-center opacity-70 group-hover:opacity-100 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-6.518 3.75V7.418l6.518 3.75z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                                <div class="absolute top-2 right-8 transform-translate-y-1/2 flex space-x-4">
+                                    <img src="image/imgi_dua wanita pekerja.png" alt="Dua Wanita Pekerja" class="rounded-lg object-contain max-h-[420px]"
+                                    style="height: 280px;width:auto;top: 2px;right: 2px;"/>
+                                </div>
+                            <p class="mt-3 text-gray-600 text-sm">Kendali Jarak Jauh di Pertambangan Bawah Tanah</p>
+                            </div>
+                            </div>
+                            </section>
+
+                            <section id="slide4" class="relative w-full h-screen bg-[#0B1620] text-white overflow-hidden">
+                                <img src="image/Karir BG.jpg" class="absolute inset-0 w-full h-full object-cover opacity-20">
+                                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                                <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
+                                    <div class="hidden md:block">
+                                        <img src="image/Karir_homepage4.png" class="h-80 object-contain">
+                                    </div>
+                                    <div class="md:ml-16 max-w-xl">
+                                         <p class="text-sm font-semibold mb-4 flex items-center space-x-2">
+                                            <span class="w-2 h-2 rounded-sm bg-gray-400"></span>
+                                            <span class="w-2 h-2 rounded-sm bg-gray-600"></span>
+                                            <span class="w-2 h-2 rounded-sm bg-gray-600"></span>
+                                            <span class="w-2 h-2 rounded-sm bg-gray-600"></span>
+                                            <span class="ml-3 text-blue-300 font-bold">04</span>
+                                        </p>
+                                        <h2 class="text-3xl md:text-4xl font-bold text-blue-300 leading-tight">
+                                            Berkarir Bersama Kami
+                                        </h2>
+
+                                        <h3 class="text-2xl font-bold mt-3">
+                                            Tantangan Kami, Peluang Anda
+                                        </h3>
+
+                                        <p class="text-gray-300 mt-4 leading-relaxed">
+                                            Kami menerapkan prinsip-prinsip inklusif dan keragaman
+                                            (Inclusion and Diversity) serta nilai-nilai Perusahaan kami yaitu   
+                                            Keselamatan, Keunggulan, Respek, Integritas dan Komitmen dalam setiap
+                                            proses rekrutmen dan penerimaan karyawan sejalan dengan prinsip-prinsip
+                                            perilaku bisnis kami (PBC) dan kebijakan Perusahaan lainnya.
+                                        </p>
+                                            
+                                        <div class="font-semibold space-x-8 mt-8">
+                                            Profesional Berpengalaman
+                                            </a>
+
+                                        <div class="font-semibold space-x-8 mt-8">
+                                            Program Magang
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+   </main> 
+
+    <footer class="bg-white border-t mt-20 text-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+            <div>
+                <h4 class="font-semibold mb-3">Beranda</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-black">Tentang Kami</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">Keberlanjutan</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">Media</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-3">Tentang Kami</h4>
+                <ul class="space-y-2">
+                    <li><a href="https://ptfi.co.id/id/about" class="text-gray-600 hover:text-black">Sekilas Tentang Kami</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">Bagaimana Kami Beroperasi</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">PTFI di Masyarakat</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">PTFI di Lingkungan</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">Berita</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-3">Terhubung dengan kami</h4>
+                     <div class="flex gap-3">
+                        <a href="https://www.facebook.com/share/1J37WixnCr/" class="p-2 border rounded hover:bg-gray-200">
+                            <img src="image/imgi_15_icon-facebook.svg" alt="Facebook" class="h-5 w-5">
+                        </a>
+                        <a href="https://x.com/IDFreeport" class="p-2 border rounded hover:bg-gray-200">
+                            <img src="image/imgi_16_icon-twitter.svg" alt="Twitter" class="h-5 w-5">
+                        </a>
+                        <a href="https://www.instagram.com/freeportindonesia/" class="p-2 border rounded hover:bg-gray-200">
+                            <img src="image/imgi_17_icon-instagram.svg" alt="Instagram" class="h-5 w-5">
+                        </a>
+                        <a href="https://www.youtube.com/user/FreeportIndonesia" class="p-2 border rounded hover:bg-gray-200">
+                            <img src="image/imgi_18_icon-youtube.svg" alt="Youtube" class="h-5 w-5">
+                        </a>
+                         <a href="https://www.linkedin.com/company/freeport-indonesia/" class="p-2 border rounded hover:bg-gray-200">
+                            <img src="image/imgi_19_icon-linkedin.svg" alt="LinkedIn" class="h-5 w-5">
+                        </a>  
+            </div>
+        </div>
+
+</div>
+
+            <div class="max-w-7xl mx-auto px-6 pt-6 pb-12 border-t text-sm text-gray-500">
+                <p class="mb-4 text-black text-bold text-1xl">
+                    PT Freeport Indonesia adheres to the International Council on
+                    Mining & Metals (ICMM) Sustainability Reporting Guidelines.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-6 mt-4 mb-4">
+                    <img src="image/GRI.jpg" alt="GRI" class="h-10">
+                    <img src="image/ICMM-2.jpg" alt="ICMM" class="h-10">
+                    <img src="image/logo-ind.jpg" alt="Logo Ind" class="h-10">
+                </div>
+                <p class="mt-6 text-xs text-black">Copyrights © 2025 - PT Freeport Indonesia</p>
+                </div>
+            </div>
+    </footer>
 </body>
-</html>
+</html
